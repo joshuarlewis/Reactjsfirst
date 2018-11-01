@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Josh's Test React</title>
+
+
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<body>
+
+<!-- React.js DOM Render Element -->
+<div id="id01">Hello World!</div>
+
+<script type="text/babel">
+    ReactDOM.render(
+    <h1>Hello EWTech!</h1>,
+    document.getElementById('id01'));
+</script>
+
+<!-- React.js Text Area Element -->
+<textarea>
+    Hello there, this is a text area in React.js
+</textarea>
+
+<br>
+
+<!-- React.js Select Element -->
+<select>
+    <option value="5FDP">5FDP</option>
+    <option value="Pantera">Pantera</option>
+    <option selected value="Slayer">Slayer</option>
+    <option value="LoG">LoG</option>
+</select>
+
+<br>
+
+<!-- React.js Form Element -->
+<form>
+    <label>
+    Name:
+    <input type="text" name="name" />
+    </label>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
