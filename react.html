@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Josh's React.js</title>
+
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<body>
+
+    <div id="id01"></div>
+    <script type="text/babel">
+    ReactDOM.render(
+      <h1>Hello EWTech!</h1>,
+      document.getElementById('id01'));
+    </script>
+
+    <div id="root"></div>
+    <script type="text/babel">
+        function tick() {
+        const element = (<h1>{new Date().toLocaleTimeString()}</h1>);
+        ReactDOM.render(element, document.getElementById('root'));
+        }setInterval(tick, 1000);
+    </script>
+
+    <div id="app"></app>
+    <div>
+        <h1>Art, Chris, Collin, Josh, Joyce, and Shawnta are AWESOME!</h1>
+        <p>
+        <strong>
+          More info on their AWESOMENESS <a href="https://github.com/jdoorn/Questionaire" target="_blank">here</a>.
+        </strong>
+        </p>
+    </div>
+
+    <br>
+
+    <textarea>
+    Vote on your favorite programmer!
+    </textarea>
+
+    <br>
+    <br>
+
+    <select>
+        <option selected value="Art">Art</option>
+        <option value="Chris">Chris</option>
+        <option value="Collin">Collin</option>
+        <option value="Josh">Josh</option>
+        <option value="Joyce">Joyce</option>
+        <option value="Shawnta">Shawnta</option>
+    </select>
+
+    <br>
+    <br>
+
+    <form>
+        <label>
+            Name:
+            <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Submit" />
+    </form>
+
+ 
+    
+
+</body>
+</html>
