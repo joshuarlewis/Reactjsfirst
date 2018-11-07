@@ -8,11 +8,11 @@
 
 <body>
 
-    <div id="id01"></div>
+    <div id="id02"></div>
     <script type="text/babel">
     ReactDOM.render(
       <h1>Hello EWTech!</h1>,
-      document.getElementById('id01'));
+      document.getElementById('id02'));
     </script>
 
     <div id="root"></div>
@@ -23,46 +23,67 @@
         }setInterval(tick, 1000);
     </script>
 
+
+
     <div id="app"></app>
     <div>
         <h1>Art, Chris, Collin, Josh, Joyce, and Shawnta are AWESOME!</h1>
         <p>
         <strong>
-          More info on their AWESOMENESS <a href="https://github.com/jdoorn/Questionaire" target="_blank">here</a>.
+                More info on their AWESOMENESS
+        <a href="https://github.com/jdoorn/Questionaire" target="_blank">HERE</a> 
         </strong>
         </p>
     </div>
+   
 
+
+
+    <div id="id01"></div>
+    <script type="text/babel">
+    const name = 'Vote on your favorite programmer!';
+    ReactDOM.render(
+      <h1> 
+      <select>
+            <option selected value="Art">Art</option>
+            <option value="Chris">Chris</option>
+            <option value="Collin">Collin</option>
+            <option value="Josh">Josh</option>
+            <option value="Joyce">Joyce</option>
+            <option value="Shawnta">Shawnta</option>
+        </select> {name}
+        </h1>,
+            document.getElementById('id01'));
+    </script>
+    
+    <br>
     <br>
 
-    <textarea>
-    Vote on your favorite programmer!
-    </textarea>
-
+    <div id="root1"></div>
+    <script type="text/babel">
+    ReactDOM.render(
+        <textarea rows="2" cols="45">
+            Text areas can be very useful in React.js!
+        </textarea>, 
+            document.getElementById('root1'));
+    </script>
+    
     <br>
     <br>
 
-    <select>
-        <option selected value="Art">Art</option>
-        <option value="Chris">Chris</option>
-        <option value="Collin">Collin</option>
-        <option value="Josh">Josh</option>
-        <option value="Joyce">Joyce</option>
-        <option value="Shawnta">Shawnta</option>
-    </select>
-
-    <br>
-    <br>
-
-    <form>
+    <div id="root2"></div>
+    <script type="text/babel">
+    ReactDOM.render(
+        <form>
         <label>
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="name" placeholder="Last, First" />
         </label>
-        <input type="submit" value="Submit" />
-    </form>
+            <input type="submit" value="Submit" />
+        </form>, 
+            document.getElementById('root2'));
+    </script>
 
- 
     
 
 </body>
